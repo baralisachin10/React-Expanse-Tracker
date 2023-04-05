@@ -1,5 +1,6 @@
 
 import Expense from "./components/Expense";
+import React from 'react';
 
 function App() {
   //expense items list
@@ -31,6 +32,10 @@ function App() {
   ];
 
   return (
+
+    // if there is no jsx then we must write like this
+    // React.createElement('div', {}, React.createElement('h2', {}, 'Let\'s get started'), React.createElement(Expense, { expenses: expenses }))
+
     <div>
       <h2>Let's get started!</h2>
       <Expense expenses = {expenses}/>
