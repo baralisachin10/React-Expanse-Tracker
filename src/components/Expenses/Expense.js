@@ -20,12 +20,12 @@ function Expense(props) {
 
     <Card className='expenses'>
       <ExpensesFilter onSelectedYear={filterYearHandler} selectYear={filteredYear} />
-      {filterExpenses.map(expense => <ExpanseItem
+      {filterExpenses.length === 0 ? <p>No Expenses Found</p> : filterExpenses.map(expense => <ExpanseItem
         key={expense.id}
         title={expense.title}
         amount={expense.amount}
         date={expense.date} />
-      )};
+      )}
     </Card>
   )
 }
