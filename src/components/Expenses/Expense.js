@@ -1,6 +1,6 @@
 import React from 'react';
 import ExpanseItem from './ExpanseItem';
-import Card from './UI/Card';
+import Card from '../UI/Card';
 import './Expense.css';
 
 function Expense(props) {
